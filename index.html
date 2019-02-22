@@ -2,12 +2,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   
-html { 
-  background: url("AAFaster.png");
-  background-size: cover;
+.parallax { 
+  /* The image used */
+  background-image: url("AAFaster.png");
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
+  background-size: cover;
 }
   
 h1 {
@@ -55,7 +61,7 @@ a:active {
 }
 </style>
 
-<html>
+<html class="parallax">
     <head>
         <title>Ark Ayy</title>
       <img class="one" src="AAFaster.png"></img>
