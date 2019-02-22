@@ -16,6 +16,24 @@
   background-size: cover;
 }
   
+ #row1{
+    display:flex;
+    flex-direction:row;
+justify-content: space-around;
+}
+
+#column1{
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+#column2{
+    display:flex;
+    flex-direction:column;
+}
+  
 ul#menu li {
   display:inline;
 }
@@ -71,12 +89,12 @@ a:active {
     <!--  <img class="one" src="AAFaster.png"></img> -->
     </head>
     <body>
-        <div>
-          <div>
+        <div id="row1">
+          <div id="column1">
           <h1 id="FirstTitle">Ark Ayy</h1>
             <img src="Me.jpg" width="200" height="300" class="orange-border"></img>
       </div>
-      <div>
+      <div id="column2">
         <ul id="menu">
             <li><a href="#gpro">Gamer Profile</a></li>
             <li>Games</li>
