@@ -81,7 +81,7 @@ p{
 }
 #logo-designs {
   width: auto;
-  height: 300px;
+  height: 350px;
   background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
   box-shadow: 0 4px 8px 0 rgba(63,0,255,0.5), 0 6px 20px 0 rgba(255,0,0,0.7);
   text-align: center;
@@ -90,17 +90,16 @@ p{
 #logo-title {
   color: rgb(255, 204, 0);
 }
-#first-logo {
-  width: 250px;
-  height: auto;
+.column {
   float: left;
-  padding-left: 150px;
+  width: 30%;
+  padding: 5px;
+  padding-left: 25px;
 }
-#second-logo {
-  width: 250px;
-  height: 250px;
-  float: right;
-  padding-right: 150px;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 #clear {
   clear: both;
@@ -145,10 +144,17 @@ a:active {
   </div>
   <div id="logo-designs">
     <h2 id="logo-title">Logo Designs</h2>
-    <div id="first-logo">
-      <img id="img" src="grind.png" alt "Made with Photoshop"></div>
-    <div id="second-logo">
-      <img id="img" src="ping.png" alt "Made with Photoshop"></div>
+    <div class="row">
+      <div class="column">
+        <img src="grind.png" alt="Coffee" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="ping.png" alt="Ping" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="space.png" alt="space" style="width:100%">
+      </div>
+    </div>
   </div>
   <div id="clear">
     <h4>Click this link =<a id="tribute-link" href="https://www.linkedin.com/in/rkalaw/" target="_blank"> LinkedIn </a>= for more in-depth information!</h4>
