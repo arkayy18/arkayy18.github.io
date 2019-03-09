@@ -43,8 +43,8 @@ img{
   margin: -5px;
   margin-top: 20px;
   width: 100%;
-  border: 5px solid gold;
-  background: purple;
+  /* border: 5px solid gold; */
+  box-shadow: 0 4px 8px 0 rgba(63,0,255,0.5), 0 6px 20px 0 rgba(0,0,0,0.7);
 }
 #img-caption{
   margin: 15px;
@@ -67,14 +67,44 @@ p{
 #quote{
   font-style: italic;
 }
-#tribute-info {
+#quote-card {
   background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
   width: auto;
   height: 80px;
   margin-top: 50px;
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(63, 0, 255, 0.5), 0 6px 20px 0 rgba(255, 0, 0, 0.7);
+  text-align: center;
+  color: rgb(255, 204, 0);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-
+#logo-designs {
+  width: auto;
+  height: 300px;
+  background: linear-gradient(35deg,#CCFFFF,#FFCCCC);
+  box-shadow: 0 4px 8px 0 rgba(63,0,255,0.5), 0 6px 20px 0 rgba(255,0,0,0.7);
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#logo-title {
+  color: rgb(255, 204, 0);
+}
+#first-logo {
+  width: 250px;
+  height: auto;
+  float: left;
+  padding-left: 150px;
+}
+#second-logo {
+  width: 250px;
+  height: 250px;
+  float: right;
+  padding-right: 150px;
+}
+#clear {
+  clear: both;
+}
 /* LINK STYLES */
 a:hover {
   color: orange;
@@ -96,18 +126,32 @@ a:active {
   <h1 id="title">Arekay</h1>
   <div>Gamer, Coder, Designer</div>
   <div id="img-div">
-    <img id="img" src="AAFaster.png" alt "me">
+    <img id="img" src="world.png" alt "Generated with Blender">
     <div id="img-caption">
-      Designed by Arekay (AKA Ark Ayy)
+      Created in Blender by Arekay (A.K.A. ArkAyy)
     </div><br>
   </div>
-  <div id="tribute-info">
+  <div id="quote-card">
     <!-- ADD INFO HERE -->
     <div id="quote">"It's a beautiful day, the sun is shining, I feel good, and no one's gonna stop me now."</div>
-  </div>
-  <div>
+    <br>
     <p>- Freddie Mercury</p>
-    <h4>Click this link =<a id="tribute-link" href="https://en.wikipedia.org/wiki/Queen_(band)" target="_blank">Wikipedia Entry</a>= for more in-depth information!</h4>
+  </div>
+  <div id="img-div">
+    <img id="img" src="leafripple1080.png" alt "Generated with Blender">
+    <div id="img-caption">
+      Leaf ripple created with Blender
+    </div>
+  </div>
+  <div id="logo-designs">
+    <h2 id="logo-title">Logo Designs</h2>
+    <div id="first-logo">
+      <img id="img" src="grind.png" alt "Made with Photoshop"></div>
+    <div id="second-logo">
+      <img id="img" src="ping.png" alt "Made with Photoshop"></div>
+  </div>
+  <div id="clear">
+    <h4>Click this link =<a id="tribute-link" href="https://www.linkedin.com/in/rkalaw/" target="_blank"> LinkedIn </a>= for more in-depth information!</h4>
       </div>
     </div>
 </html>
